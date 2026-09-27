@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/old_money_beige">
+
+    <!-- 🔍 Search Bar -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search"
+            android:background="@android:color/transparent"
+            android:paddingStart="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- 🔥 MAIN SCROLL -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"
+        android:layout_above="@id/bottom_navigation"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 🔥 Banner -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/download__12_" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/_d4cc2fc47be4e9c27cee0fcabf18c04" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Discover Ideas"
+                        android:textColor="@color/old_money_brown"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- 🔥 Horizontal Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Old Posters"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingStart="12dp"
+                android:paddingBottom="10dp"/>
+
+            <!-- 🔥 STATIC HORIZONTAL SCROLL -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp">
+
+                    <!-- IMAGE 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/africa___toto" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- IMAGE 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/download__16_" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- IMAGE 3 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/love_bites_font__2025_edition" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- IMAGE 4 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/download__17_" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingBottom="10dp"
+                android:text="Nature"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <!-- 🔥 STATIC HORIZONTAL SCROLL -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp">
+
+                    <!-- IMAGE 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/download__29_" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- IMAGE 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/metal_gear_solid_3_snake_eater_pachislot" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- IMAGE 3 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/download__28_" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- IMAGE 4 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="220dp"
+                        android:layout_marginEnd="12dp"
+                        app:cardCornerRadius="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/typography__2_" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- 🔻 Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/old_money_gold"
+        android:elevation="12dp"
+
+        app:itemIconTint="@color/old_money_brown"
+        app:itemTextColor="@color/old_money_brown"
+        app:itemRippleColor="@color/old_money_gold"
+
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu"/>
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 60% Soft White -->
+    <color name="soft_white">#F9FBFD</color>
+
+    <!-- 30% Sky Blue -->
+    <color name="sky_blue_start">#4FC3F7</color>
+    <color name="sky_blue_end">#29B6F6</color>
+
+    <!-- 10% Green -->
+    <color name="fresh_green">#66BB6A</color>
+
+    <color name="old_money_beige">#F5F2E7</color>
+    <color name="old_money_brown">#3D2B1F</color>
+    <color name="old_money_gold">#C5A059</color>
+    <color name="soft_shadow">#1A000000</color>
+
+</resources>
